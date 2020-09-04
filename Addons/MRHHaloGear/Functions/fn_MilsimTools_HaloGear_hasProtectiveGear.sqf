@@ -13,5 +13,6 @@ call MRH_fnc_MilsimTools_AddonName_;
 _protectiveGogglesList = missionNamespace getVariable ["MRH_HaloGear_protectiveGear",[]];
 if (goggles player in _protectiveGogglesList) exitWith {true};
 if (headgear player in _protectiveGogglesList) exitWith {true};
+if (backpack player in _protectiveGogglesList) exitWith {true};
 if ((typeOf vehicle player) in _protectiveGogglesList) exitWith {true};
 false
